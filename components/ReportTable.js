@@ -7,11 +7,11 @@ export default function ReportTable(props) {
     let total_of_totals = 0;
     {props.sorted.map(i =>
     {
-        i.totals_list.map((item, index) =>
+        i.hourly_sales.map((item, index) =>
         hourly_total[index] += parseInt(item)
         )
 
-        i.totals_list.map(item=>
+        i.hourly_sales.map(item=>
             total_of_totals += parseInt(item)
             )
     })}
@@ -32,12 +32,12 @@ export default function ReportTable(props) {
                             <td className='border border-gray-400 bg-green-300'>
                                 {i.location}
                             </td>
-                            {i.totals_list.map(sale =>
+                            {i.hourly_sales.map(sale =>
                                 <td className='border border-gray-400 bg-green-300'>{sale}</td>
                             )}
                             <td className='border border-gray-400 bg-green-300'>
-                                {/* {props.get_location_total(i.totals_list)} */}
-                                {i.totals_list.reduce(function (sum, value) { return sum + value }, 0)}
+                                {/* {props.get_location_total(i.hourly_sales)} */}
+                                {i.hourly_sales.reduce(function (sum, value) { return sum + value }, 0)}
                             </td>
                         </tr>
                     )}

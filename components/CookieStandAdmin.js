@@ -13,7 +13,7 @@ export default function CookieStandAdmin() {
             min_customers: event.target.min.value,
             max_customers: event.target.max.value,
             avg_cookies: event.target.avg.value,
-            totals_list: get_hourly_sales(event.target.min.value, event.target.max.value),
+            hourly_sales: get_hourly_sales(event.target.min.value, event.target.max.value),
         }
         set_data(sorted => [...sorted, save_data])
     }
