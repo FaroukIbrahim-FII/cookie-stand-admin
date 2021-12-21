@@ -1,6 +1,6 @@
 # lab 37 - React I
 
-[PR](https://github.com/FaroukIbrahim-FII/cookie-stand-admin/pull/1)
+[PR](https://github.com/FaroukIbrahim-FII/cookie-stand-admin/pull/2)
 
 
 # Next.js + Tailwind CSS Example
