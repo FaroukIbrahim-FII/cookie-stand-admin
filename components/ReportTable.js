@@ -44,11 +44,11 @@ export default function ReportTable(props) {
 
                 </tbody>
                 <tfoot className="text-center bg-green-500">
-                    <td>Totals</td>
+                    <th>Totals</th>
                     {hourly_total.map(item =>
                         <th>{item}</th>
                     )}
-                    <td>{total_of_totals}</td>
+                    <th>{total_of_totals}</th>
 
                 </tfoot>
             </table>
