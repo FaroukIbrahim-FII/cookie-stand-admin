@@ -2,9 +2,29 @@ import React, { useState } from 'react'
 import BodyHeader from './BodyHeader'
 import Footer from './footer';
 import Main from './main';
+import axios from 'axios'
 
-export default function CookieStandAdmin() {
+
+
+const baseUrl ='https://fii-cookie-stand-api.herokuapp.com/';
+const endPoint =baseUrl+'api/v1/cookie_stands/';
+
+export default function CookieStandAdmin(props) {
     const hours = ['Location', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm',]
+
+    
+    const responses =[]
+    const [answeredQuesitons, setAnsweredQuesitons]=useState([]);
+
+    const config={
+        headers: {"Authorization" : `Bearer ${props.token}`}
+    }
+    axios.get(responsesEndPoint, config).then(res =>{
+        responses = res.data;
+    });
+
+
+    // console.log(process.env.REACT_APP_URL);
     const [sorted, set_data] = useState([]);
     function Handler(event) {
         event.preventDefault();
