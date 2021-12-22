@@ -37,8 +37,8 @@ export default function CookieStandAdmin() {
         return total;
     }
     function get_hourly_total(list, index, item){
-        list[index] += parseInt(item)
-        return list
+        list[index] += parseInt(item);
+        return list;
     }
     return (
         <div>

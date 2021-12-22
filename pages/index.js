@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import CookieStandAdmin from '../components/CookieStandAdmin'
 import Footer from '../components/footer'
 import Header from '../components/head'
+import BodyHeader from '../components/BodyHeader'
+
 
 export default function Home() {
   return (
