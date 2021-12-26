@@ -1,6 +1,7 @@
-# lab 37 - React I
+# lab 41 - Front End Deployment 
 
-[PR](https://github.com/FaroukIbrahim-FII/cookie-stand-admin/pull/2)
+[Deployed-Link](https://cookie-stand-admin-liard-one.vercel.app/)
+[PR](https://github.com/FaroukIbrahim-FII/cookie-stand-admin/pull/3)
 
 
 # Next.js + Tailwind CSS Example
